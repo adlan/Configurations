@@ -1,0 +1,71 @@
+Scripts
+=======
+
+snipMate
+- http://www.vim.org/scripts/script.php?script_id=2540
+
+delimitMate
+- http://www.vim.org/scripts/script.php?script_id=2754
+
+taglist
+- http://www.vim.org/scripts/script.php?script_id=273
+
+SuperTab
+- http://www.vim.org/scripts/script.php?script_id=1643
+
+ZenCoding
+- http://www.vim.org/scripts/script.php?script_id=2981
+
+surround
+- http://www.vim.org/scripts/script.php?script_id=1697
+
+Align
+- http://www.vim.org/scripts/script.php?script_id=294
+
+The NERD tree
+- http://www.vim.org/scripts/script.php?script_id=1658
+
+IndentAnything
+- http://www.vim.org/scripts/script.php?script_id=1839
+
+Javascript
+- Indent
+   - http://www.vim.org/scripts/script.php?script_id=1840
+   - *http://vim.wikia.com/wiki/Improved_Javascript_Indent_script_for_Vim
+- Syntax
+   - http://www.vim.org/scripts/script.php?script_id=1491
+
+Python
+- Pydiction
+   - http://www.vim.org/scripts/script.php?script_id=850
+- Syntax
+   - http://www.vim.org/scripts/script.php?script_id=790
+- Indent
+   - http://www.vim.org/scripts/script.php?script_id=974
+
+Ragel
+- Syntax
+   - http://www.complang.org/ragel/ragel.vim
+
+Haskell
+- Syntax
+   - http://www.vim.org/scripts/script.php?script_id=3034
+
+Ruby
+- Indent
+   - http://www.vim.org/scripts/script.php?script_id=2742
+- Testing
+   - http://www.vim.org/scripts/script.php?script_id=2286
+
+HTML/JS
+- Indent
+   - http://www.vim.org/scripts/script.php?script_id=1830
+
+Erlang
+- http://github.com/oscarh/vimerl
+
+C++
+- http://www.vim.org/scripts/script.php?script_id=2636
+
+Gtk+ and family syntax highlighting
+- http://www.vim.org/scripts/script.php?script_id=1000

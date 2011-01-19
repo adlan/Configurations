@@ -1,0 +1,15 @@
+# Check for an interactive session
+[ -z "$PS1" ] && return
+
+alias ls='ls --color=auto'
+
+export EDITOR=vim
+alias visudo='sudo -E visudo'
+
+GREEN=$'\e[;32m'
+PURPLE=$'\e[;35m'
+BLUE=$'\e[;34m'
+RED=$'\e[;31m'
+YELLOW=$'\e[;33m'
+
+PS1='\[${BLUE}\]>> \u@\h \[${GREEN}\]\w\[${RED}\]$(__git_ps1 " (Git:%s)")\n\[${YELLOW}\] \$ '
