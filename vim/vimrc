@@ -4,7 +4,7 @@ set nocompatible
 
 " Pathogen initialization
 " =======================
-
+filetype on
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
