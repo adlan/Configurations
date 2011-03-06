@@ -4,10 +4,9 @@ set nocompatible
 
 " Pathogen initialization
 " =======================
-filetype on
 filetype off
-call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 
 " Editing
@@ -114,11 +113,14 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
+" vimerl
+let g:erlangHighlightBif = 1
+
 " GUI options
 " ===========
 
 if has('gui_running')
-  colors blackboard
+  colors paintbox
 
   " Show a colored column at column 81
   set colorcolumn=81
@@ -128,7 +130,8 @@ if has('gui_running')
   set guifont=Consolas\ 11
   set guicursor=a:blinkon0,i:ver1-blinkon0
   set columns=87
-  set lines=26
+  set lines=24
+  set linespace=1
 
   " Remove toolbar
   set guioptions-=T
