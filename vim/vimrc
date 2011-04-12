@@ -109,9 +109,14 @@ let OmniCpp_MayCompleteDot = 1 " autocomplete after .
 let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
 let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+set completeopt=longest,menuone,menu,preview
+
+" http://stackoverflow.com/questions/514967/make-vim-completion-work-more-like-in-visual-studio
+inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
+inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 
 " vimerl
 let g:erlangHighlightBif = 1
@@ -120,7 +125,7 @@ let g:erlangHighlightBif = 1
 " ===========
 
 if has('gui_running')
-  colors paintbox
+  colors skittles_dark
 
   " Show a colored column at column 81
   set colorcolumn=81
