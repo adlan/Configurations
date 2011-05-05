@@ -83,6 +83,9 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 " Taglist
 nmap <silent> <F6> :TlistToggle<CR>
 
+" Tagbar
+nmap <silent> <F8> :TagbarToggle<CR>
+
 " Scratch
 nnoremap <leader><tab> :tablast<CR>:tabnew<CR>:Scratch<CR>
 
@@ -121,6 +124,9 @@ inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\
 " vimerl
 let g:erlangHighlightBif = 1
 
+" Tagbar
+let g:tagbar_expand = 1
+
 " GUI options
 " ===========
 
@@ -134,7 +140,7 @@ if has('gui_running')
   " Note: in macvim the format is Consolas:h11
   set guifont=Consolas\ 11
   set guicursor=a:blinkon0,i:ver1-blinkon0
-  set columns=87
+  set columns=85
   set lines=24
   set linespace=1
 
